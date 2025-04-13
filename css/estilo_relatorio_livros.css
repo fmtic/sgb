@@ -1,0 +1,78 @@
+/* estilo_relatorio_livros.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f8fc;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    color: #2cb2ff;
+    margin-bottom: 10px;
+  }
+  
+  form.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .filtros label {
+    flex: 1 1 200px;
+    font-weight: bold;
+    color: #352ae6;
+  }
+  
+  .filtros input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background: #2cb2ff;
+    color: white;
+  }
+  
+  tr:hover {
+    background: #f0f8ff;
+  }
+  
+  .botao {
+    background: #f99b3b;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .botao:hover {
+    background: #e58a22;
+  }
+  

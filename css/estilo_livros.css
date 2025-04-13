@@ -1,0 +1,260 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #0a3d62;
+  border-bottom: 2px solid #ffa502;
+  padding-bottom: 5px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: 1px solid #ddd;body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: #0a3d62;
+    border-bottom: 2px solid #ffa502;
+    padding-bottom: 5px;
+  }
+  
+  form {
+    margin-bottom: 30px;
+  }
+  
+  fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #1e272e;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #2f3542;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #0a3d62;
+    outline: none;
+  }
+  
+  input[type="submit"],
+  .botao-voltar,
+  button {
+    background-color: #0a3d62;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover,
+  .botao-voltar:hover {
+    background-color: #ffa502;
+    color: black;
+  }
+  
+  .botao-voltar {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .obrigatorio {
+    color: red;
+    font-size: 13px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th {
+    background-color: #0a3d62;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  td a {
+    color: #0a3d62;
+    text-decoration: none;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+  }
+  
+  #preview-capa {
+    margin-top: 10px;
+  }
+  
+  #preview-capa img {
+    max-height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1e272e;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #2f3542;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #0a3d62;
+  outline: none;
+}
+
+input[type="submit"],
+.botao-voltar,
+button {
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.botao-voltar:hover {
+  background-color: #ffa502;
+  color: black;
+}
+
+.botao-voltar {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.obrigatorio {
+  color: red;
+  font-size: 13px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #0a3d62;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+td a {
+  color: #0a3d62;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+#preview-capa {
+  margin-top: 10px;
+}
+
+#preview-capa img {
+  max-height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}

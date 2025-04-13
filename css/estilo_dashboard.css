@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .painel {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .painel h2 {
+    margin-bottom: 30px;
+  }
+  .botao {
+    display: block;
+    margin: 10px;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .botao:hover {
+    background: #2980b9;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+footer {
+    text-align: center;
+    padding: 2px 0;
+    background-color: #007BFF; /* Azul */
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

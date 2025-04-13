@@ -1,0 +1,211 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2cb2ff, #87c5ce);
+  margin: 0;
+  padding: 40px 0; /* espaço em cima e embaixo */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* importante: não centraliza verticalmente */
+  min-height: 100vh; /* permite crescer conforme o conteúdo */
+  overflow-y: auto;  /* habilita rolagem vertical se precisar */
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 700px; /* Aumenta a largura máxima para telas grandes */
+  box-sizing: border-box;
+  margin-top: 20px; /* Espaço superior */
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #352ae6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #2cb2ff;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease-in-out;
+  width: 100%; /* Garante que os campos ocupem toda a largura disponível */
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #352ae6;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #f99b3b;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #e2872f;
+}
+
+.botao-voltar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #352ae6;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #2a22c4;
+}
+
+#feedback-senha,
+#feedback-confirmar,
+#feedback-email,
+#feedback-nome {
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+  body {
+      justify-content: flex-start;
+      padding: 0 15px; /* Adiciona margem nas laterais para telas menores */
+  }
+
+  .form-container {
+      padding: 20px;
+      width: 100%; /* O formulário ocupa toda a largura disponível */
+      margin-top: 10px;
+      max-width: 100%; /* Garante que o formulário não ultrapasse a largura da tela */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="file"],
+  select,
+  textarea {
+      margin-bottom: 15px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #007bff; /* Azul */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="date"], select {
+  width: calc(100% - 12px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #ff9800; /* Laranja */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #f57c00; /* Laranja mais escuro */
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff; /* Azul */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  form {
+      padding: 15px;
+  }
+
+  input[type="date"], select, input[type="submit"] {
+      width: 100%;
+  }
+}
