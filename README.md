@@ -1,2 +1,2 @@
 # sgb
-Sistema de gerenciamento do bibliotecas comunitárias e escolares
+Sistema de gerenciamento de bibliotecas comunitárias e escolares
