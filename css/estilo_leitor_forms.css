@@ -1,110 +1,136 @@
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2cb2ff, #87c5ce);
   margin: 0;
-  background: linear-gradient(to right, #2cb2ff, #87c5ce); /* Alteração aqui */
-  font-family: Arial, sans-serif;
-  color: white;
+  padding: 40px 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
-.login-container {
-  background-color: #1c1c1c;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(255, 165, 0, 0.25);
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-  animation: aparecer 0.5s ease-in-out;
-}
-
-@keyframes aparecer {
-  from {
-      opacity: 0;
-      transform: translateY(-30px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-.logo {
-  max-width: 150px;
-  max-height: 80px;
-  margin-bottom: 20px;
+.form-container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  margin-top: 20px;
 }
 
 h2 {
-  color: #3498db;
+  text-align: center;
   margin-bottom: 25px;
+  color: #352ae6;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+input[type="text"],
 input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0 20px;
-  border: none;
-  border-radius: 6px;
-  background-color: #2c2c2c;
-  color: white;
+input[type="password"],
+input[type="file"],
+input[type="date"],
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #2cb2ff;
+  border-radius: 8px;
   font-size: 15px;
+  transition: border-color 0.3s ease-in-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #352ae6;
+  outline: none;
 }
 
 input[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  background-color: #e67e22;
+  background-color: #f99b3b;
+  color: white;
   border: none;
-  border-radius: 6px;
-  color: black;
-  font-weight: bold;
+  padding: 12px;
   font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  background-color: #cf6b10;
+  background-color: #e2872f;
 }
 
-.mensagem-erro {
-  color: #ff4f4f;
-  font-size: 14px;
+.botao-voltar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #352ae6;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #2a22c4;
+}
+
+#feedback-senha,
+#feedback-confirmar,
+#feedback-email,
+#feedback-nome {
+  font-size: 0.9em;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
-.senha-group {
-  position: relative;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    justify-content: flex-start;
+    padding: 0 15px;
+  }
 
-.toggle-senha {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #aaa;
-  cursor: pointer;
-}
+  .form-container {
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 100%;
+  }
 
-.toggle-senha:hover {
-  color: #fff;
-}
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="file"],
+  input[type="date"],
+  select,
+  textarea {
+    margin-bottom: 15px;
+  }
 
-.mensagem-erro {
-  color: #ff4f4f;
-  font-size: 14px;
-  margin-bottom: 10px;
-  animation: shake 0.3s ease-in-out;
-}
-
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
+  h2 {
+    font-size: 18px;
+  }
 }
