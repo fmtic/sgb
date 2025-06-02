@@ -118,6 +118,7 @@ $leitores = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <th>Idade</th>
       <th>Email</th>
       <th>Telefone</th>
+      <th>Telefone 2</th>
       <th>Ações</th>
     </tr>
 
@@ -137,6 +138,8 @@ $leitores = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <td><?= calcularIdade($leitor['data_nascimento']) ?></td>
   <td><?= htmlspecialchars($leitor['email']) ?></td>
   <td><?= htmlspecialchars($leitor['telefone']) ?></td>
+  <td><?= htmlspecialchars($leitor['telefone2']) ?></td>
+
   <td>
     <a class="btn" href="leitor_form.php?id=<?= $leitor['id'] ?>">✏️ Editar</a>
     <a class="btn danger" href="leitores.php?excluir=<?= $leitor['id'] ?>" onclick="return confirm('Tem certeza que deseja excluir este leitor?')">🗑️ Excluir</a>

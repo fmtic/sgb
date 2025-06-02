@@ -1,11 +1,10 @@
 <?php
 session_start();
+include 'conexao.php';
 if (!isset($_SESSION['usuario_id']) || $_SESSION['tipo_usuario'] != 'admin') {
     header("Location: login.php");
     exit;
 }
-
-$pdo = new PDO("pgsql:host=localhost;dbname=SGB", "postgres", "24455535");
 
 // Empréstimos atrasados
 $atrasos = $pdo->query("
