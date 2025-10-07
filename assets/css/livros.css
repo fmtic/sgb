@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+button {
+    margin-top: 20px;
+    background: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.preview img {
+    margin-top: 10px;
+    max-width: 200px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #3498db;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.mini-capa {
+    max-width: 50px;
+    border-radius: 4px;
+}
+
+.filtro-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.filtro-form label {
+    margin-top: 0;
+}
+
+.filtro-form input {
+    flex: 1 1 150px;
+    padding: 5px;
+}
+
+.filtro-form button {
+    flex: 0 0 auto;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 3px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.pagination a.active {
+    background: #3498db;
+    color: #fff;
+    pointer-events: none;
+}

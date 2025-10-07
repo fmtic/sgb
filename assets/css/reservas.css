@@ -1,0 +1,263 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 900px;
+}
+
+h1, h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+form label {
+    flex: 1 0 100px;
+    font-weight: bold;
+}
+
+form select, form input {
+    flex: 1 1 200px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #fb8c00;
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #1976d2;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form label, form select, form button {
+        flex: 1 0 100%;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 950px;
+}
+
+h1, h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+form label {
+    flex: 1 0 100px;
+    font-weight: bold;
+}
+
+form select, form input {
+    flex: 1 1 200px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #fb8c00;
+    transform: translateY(-2px);
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #1976d2;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Badges de status */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
+
+.badge.ativa { background-color: #4caf50; }        /* verde */
+.badge.cancelada { background-color: #f44336; }    /* vermelho */
+.badge.concluida { background-color: #2196f3; }    /* azul */
+.badge.atrasada { background-color: #ff9800; }     /* laranja */
+
+/* Ícones (utilize FontAwesome ou similar) */
+.icon {
+    margin-right: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form label, form select, form button {
+        flex: 1 0 100%;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .badge {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+}
+
+}

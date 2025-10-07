@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(135deg, #0a3d62, #1e90ff);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-box h1 {
+    color: #1e90ff;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #1e90ff;
+}
+
+.btn-login {
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #0a74da;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    z-index: 0;
+}
+
+.btn-google {
+    background: white;
+    color: #444;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-google:hover {
+    background: #f8f8f8;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #666;
+}
